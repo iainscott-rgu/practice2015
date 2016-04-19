@@ -1,6 +1,9 @@
 body{
 
     font-family: 'Roboto', sans-serif;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header>h1{
