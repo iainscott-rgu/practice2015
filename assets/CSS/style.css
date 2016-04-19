@@ -11,3 +11,13 @@ header>h1{
     display: inline;
     font-size: 36px;
 }
+
+.grid-50{
+
+    border: solid 2px;
+}
+
+.grid-100{
+
+    border: solid 2px;
+}
