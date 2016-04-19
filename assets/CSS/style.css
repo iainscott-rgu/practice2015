@@ -14,7 +14,6 @@ header>h1{
 
 .grid-45{
 
-    border: solid 2px;
     margin-top: 3%;
     margin-left: 0;
     margin-right: 4%;
@@ -23,7 +22,6 @@ header>h1{
 
 .grid-95{
 
-    border: solid 2px;
     margin-top: 3%;
     margin-left: 0;
     margin-right: 0;
@@ -33,4 +31,9 @@ header>h1{
 footer>p{
 
     text-align: center;
+}
+
+#logo5{
+
+    width: 900px;
 }
