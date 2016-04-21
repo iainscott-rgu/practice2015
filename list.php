@@ -21,7 +21,20 @@ $sql = "SELECT * FROM news_item";
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     $title = $row['title'];
-    echo "<tr><td><input type=\"text\" name=\"title\" size=\"100\" value=\"{$title}\"></td></tr>";
+    $link = $row['link'];
+    $summary = $row['summary'];
+    $category = $row['category'];
+
+    echo " <form class='form2'>
+        <table>
+            <tr><td><input type='text' name='title' size='100' value='{$title}'></td></tr>
+            <tr><td><input type='text' name='link' size='100' vlaue='{$link}'></td></tr>
+            <tr><td><textarea cols='101' rows='5' name='summary' value='{$summary}'></textarea></td></tr>
+            <tr><td><input type='text' name='category' size='100' value='{$category}'></td></tr>
+        </table>
+    </form>
+
+    <hr size='3'>";
 }
 ?>
 <main>
