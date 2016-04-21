@@ -21,7 +21,7 @@ $sql = "SELECT * FROM news_item";
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     $title = $row['title'];
-    echo "hello {$title}";
+    echo "<tr><td><input type=\"text\" name=\"title\" size=\"100\" value=\"{$title}\"></td></tr>";
 }
 ?>
 <main>
