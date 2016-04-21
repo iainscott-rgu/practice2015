@@ -27,7 +27,7 @@ while ($row = $result->fetch_array()) {
 ?>
 
 <main class="form">
-<form>
+<form action="insert.php" method="post">
     <table>
         <tr><td><label for="title">title:</label></td><td><input type="text" name="title" size="30" required></td></tr>
         <tr><td><label for="link">link:</label></td><td><input type="text" name="link" size="30" required></td></tr>
