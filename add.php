@@ -34,8 +34,8 @@ while ($row = $result->fetch_array()) {
         <tr><td><label for="summary">summary:</label></td><td><textarea cols="31" rows="5" name="summary" required></textarea></td></tr>
         <tr><td><label for="category">category:</label></td><td>
             <select>
-                <option value="sport" name="sport">sport</option>option>
-                <option value="politics" name="politics">politics</option>option>
+                <option value="sport" name="sport">sport</option>
+                <option value="politics" name="politics">politics</option>
                 <option value="technology" name="technology">technology</option>
             </select>
         </td></tr>
