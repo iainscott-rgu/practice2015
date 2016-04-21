@@ -36,7 +36,7 @@ while ($row = $result->fetch_array()) {
             <select>
                 <option value="sport" name="sport">sport</option>option>
                 <option value="politics" name="politics">politics</option>option>
-                <option value="technology" name="technology">technology</option>option>
+                <option value="technology" name="technology">technology</option>
             </select>
         </td></tr>
         <tr><td colspan="2"><input type="submit" id="submit" value="submit"></td></tr>
