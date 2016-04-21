@@ -6,6 +6,11 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
     <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css" type="text/css">
+
+<?php
+include("connection.php");
+?>
+
 </head>
 <body>
 <header>
