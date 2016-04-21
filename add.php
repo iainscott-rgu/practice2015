@@ -11,7 +11,7 @@
 include("connection.php");
 $sql = "SELECT * FROM news_item";
 $result = $db->query($sql);
-echo "hello {$spl}";
+echo "hello $spl";
 
 ?>
 
