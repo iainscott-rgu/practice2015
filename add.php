@@ -9,6 +9,8 @@
 
 <?php
 include("connection.php");
+$sql = "SELECT * FROM news_item";
+$result = $db->query($sql);
 ?>
 
 </head>
