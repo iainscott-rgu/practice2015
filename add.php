@@ -11,7 +11,11 @@
 include("connection.php");
 $sql = "SELECT * FROM news_item";
 $result = $db->query($sql);
-echo "hello {$result}";
+while ($row = $result->fetch_array()) {
+    $title = $row['title'];
+    echo "hello {$title}";
+}
+
 
 ?>
 
@@ -23,7 +27,8 @@ echo "hello {$result}";
     all the news in a box
 
 </header>
-<main class="form">
+<main class="
+}form">
 <form>
     <table>
         <tr><td><label for="title">title:</label></td><td><input type="text" name="title" size="30" required></td></tr>
