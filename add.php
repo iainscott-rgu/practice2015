@@ -13,15 +13,7 @@
 
     <h1>newsbox: add news item</h1><br>
     all the news in a box
-    <?php
-    include("connection.php");
-    $sql = "SELECT * FROM news_item";
-    $result = $db->query($sql);
-    while ($row = $result->fetch_array()) {
-        $title = $row['title'];
-        echo "hello {$title}";
-    }
-    ?>
+
 </header>
 
 <main class="form">

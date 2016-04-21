@@ -6,17 +6,6 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
     <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css" type="text/css">
-
-    <?php
-    include("connection.php");
-    $sql = "SELECT * FROM news_item";
-    $result = $db->query($sql);
-    while ($row = $result->fetch_array()) {
-    $title = $row['title'];
-    echo "hello {$title}";
-    }
-    ?>
-
 </head>
 <body>
 <header>
@@ -26,7 +15,15 @@
 
 </header>
 
-
+<?php
+include("connection.php");
+$sql = "SELECT * FROM news_item";
+$result = $db->query($sql);
+while ($row = $result->fetch_array()) {
+    $title = $row['title'];
+    echo "hello {$title}";
+}
+?>
 <main>
 
     <form class="form2">
