@@ -7,18 +7,6 @@
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
     <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css" type="text/css">
 
-<?php
-include("connection.php");
-$sql = "SELECT * FROM news_item";
-$result = $db->query($sql);
-while ($row = $result->fetch_array()) {
-    $title = $row['title'];
-    echo "hello {$title}";
-}
-
-
-?>
-
 </head>
 <body>
 <header>
@@ -27,8 +15,18 @@ while ($row = $result->fetch_array()) {
     all the news in a box
 
 </header>
-<main class="
-}form">
+
+<?php
+include("connection.php");
+$sql = "SELECT * FROM news_item";
+$result = $db->query($sql);
+while ($row = $result->fetch_array()) {
+    $title = $row['title'];
+    echo "hello {$title}";
+}
+?>
+
+<main class="form">
 <form>
     <table>
         <tr><td><label for="title">title:</label></td><td><input type="text" name="title" size="30" required></td></tr>
