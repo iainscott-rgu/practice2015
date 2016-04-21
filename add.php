@@ -16,16 +16,6 @@
 
 </header>
 
-<?php
-include("connection.php");
-$sql = "SELECT * FROM news_item";
-$result = $db->query($sql);
-while ($row = $result->fetch_array()) {
-    $title = $row['title'];
-    echo "hello {$title}";
-}
-?>
-
 <main class="form">
 <form action="insert.php" method="post">
     <table>
