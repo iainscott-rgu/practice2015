@@ -28,9 +28,10 @@ while ($row = $result->fetch_array()) {
 
     <form class="form2">
         <table>
+            <tr><td><input type="text" name="title" size="100" value="$title"></td></tr>
             <tr><td><input type="text" name="link" size="100"></td></tr>
             <tr><td><textarea cols="101" rows="5" name="summary"></textarea></td></tr>
-            <tr><td><input type="submit" id="submit" value="submit"></td></tr>
+            <tr><td><input type="text" name="category" size="100"></td></tr>
         </table>
     </form>
 
