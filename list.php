@@ -24,7 +24,7 @@ if(isset($_GET['category'])){
     $sql = "SELECT * FROM news_item WHERE category = '$news_itemCategory'";
     }
 else{
-
+    echo "category all news";
     $sql = "SELECT * FROM news_item";
 }
 
