@@ -20,7 +20,7 @@ include("connection.php");
 
 if(isset($_GET['category'])){
     $news_itemCategory = $_GET['category'];
-    echo "category {$category}";
+    echo "category {$news_itemCategory}";
     $sql = "SELECT * FROM news_item WHERE news_itemCategory = $news_itemCategory";
     }
 else{
