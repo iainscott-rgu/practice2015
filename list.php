@@ -11,7 +11,7 @@
 <header>
 
     <h1>newsbox: all news</h1><br>
-    all the news in a box
+    all the news in a box...
 
 </header>
 
@@ -21,7 +21,7 @@ include("connection.php");
 if(isset($_GET['category'])){
     $news_itemCategory = $_GET['category'];
     echo "category {$news_itemCategory}";
-    $sql = "SELECT * FROM news_item WHERE ['category'] = $news_itemCategory";
+    $sql = "SELECT * FROM news_item WHERE category = $news_itemCategory";
     }
 else{
 
