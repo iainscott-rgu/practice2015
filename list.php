@@ -17,7 +17,16 @@
 
 <?php
 include("connection.php");
-$sql = "SELECT * FROM news_item";
+
+if(isset($_GET['category'])){
+    $news_itemCategory = $_GET['category'];
+    $sql = "SELECT * FROM news_item WHERE news_itemCategory = $news_itemCategory";
+    }
+else{
+
+    $sql = "SELECT * FROM news_item";
+}
+
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     $title = $row['title'];
